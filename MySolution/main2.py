@@ -1,3 +1,6 @@
+
+print("test")
+
 class Produkt(NamedTuple):
     pass
     ...
