@@ -5,7 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="330501c7-0f1a-4061-90af-fc17f810cb07" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/ITNetworkSolution/main3.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MySolution/main2.py" beforeDir="false" afterPath="$PROJECT_DIR$/MySolution/main2.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,11 +37,12 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "Python.main.executor": "Run",
+    "Python.main2.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "master",
     "ignore.virus.scanning.warn.message": "true",
-    "last_opened_file_path": "C:/Users/alesz/OneDrive/Dokumenty/Software/ITNetwork/project_playground"
+    "last_opened_file_path": "C:/Users/alesz/OneDrive/Dokumenty/Software/ITNetwork/Python/Iterables/Products"
   }
 }]]></component>
   <component name="SharedIndexes">

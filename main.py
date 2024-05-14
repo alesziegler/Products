@@ -17,6 +17,10 @@ class Produkt(NamedTuple):
 
 
     """
+    pass
+
+
+    """
     def __init__(self,nazev,
                  kategorie,cena,mnozstvi
                  ):
@@ -36,6 +40,15 @@ class Produkt(NamedTuple):
         # ok, now it sort of works, at least on first glance, except that
         # we probably do need to ensure that nazev corresponds with name.
         # so, translate to US format, and then use replace to replace bad characters?
+        
+
+
+Produkt = namedtuple("nazev", ["kategorie","cena","mnozstvi"])
+"""
+
+Produkt = namedtuple("Produkt",["nazev","kategorie", "cena","mnozstvi"])
+
+print("Katalog:")
 
 # Seznam produktů
 produkty = [
@@ -45,11 +58,61 @@ produkty = [
     Produkt(nazev="Tablet", kategorie="Elektronika", cena=8000.0, mnozstvi=0)
 ]
 
+for produkt in produkty:
+    print(f"{produkt.nazev}, {produkt.kategorie}, cena {produkt.cena}, množství {produkt.mnozstvi}")
+
+print("Dostupné produkty jsou:",end=" ")
+
+result = []
+
+count = 0
+
+for produkt in produkty:
+    if produkt.kategorie == "Elektronika" and produkt.mnozstvi > 0:
+        result.append(produkt.nazev)
+
+for x in result:
+    if count < 1:
+        x += ","
+    print(x, end = " ")
+    count += 1
+
+print()
+
+#We should try to convert the thing to named tuple outside of a class
+
+
+print()
+
+
+
+
+
+Person = namedtuple("Person", ["name", "age", "gender"])
+
+person1 = Person(name="Alice", age=30, gender="Female")
+
+print(person1.name)
+
+print(person1.age)
+
+"""
+
+Produkt = namedtuple("Produkt",["nazev","kategorie", "cena","mnozstvi"])
+
+produkt_example = Produkt(nazev="Notebook", kategorie="Elektronika", cena=15000.0, mnozstvi=5)
+
+print(produkt_example.nazev)
+
+print(produkt_example.cena)
+
+
+
 def dostupne_produkty(produkt):
-    """
+    
     This should return a list of NamedTuples? Parameter is also a list.
     So list should be filtered and another list returned.
-    """
+    
     return produkt
 
 test_list = ["Kra", 52, "D"]
@@ -62,3 +125,5 @@ for x in result:
 print(produkty[1])
 
 Color = namedtuple('Color',['red'])
+
+"""
